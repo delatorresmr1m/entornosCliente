@@ -21,3 +21,8 @@
 // Este ejercicio es de reflexión: no es necesario ejecutar nada.
 // Si quieres, prueba algo aquí.
 
+const BIRTHDATE = '18.04.1982';
+const edad = prompt('Introduce tu edad: ');
+
+console.log(`Fecha de nacimiento: ${BIRTHDATE}`);
+console.log(`Edad: ${edad}`);
