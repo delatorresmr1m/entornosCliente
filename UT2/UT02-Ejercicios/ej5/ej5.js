@@ -14,6 +14,6 @@ console.log(a, x);
      nuevo a 'a'. Por lo tanto, 'a' se convierte en 4. Luego, 'x' se 
      calcula como 1 + 4, lo que da como resultado 5.
 
-********************************************************************
+*********************************************************************
 
 */
