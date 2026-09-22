@@ -69,5 +69,5 @@ if (login === "Admin") {
     sin pedir contraseña. Esto también ocurre
     si dejamos el usuario vacío o cancelamos.
     **********************************************/
-    alert("Usuario Estandar sin contraseña.");
+    alert("No te conozco.");
 }
