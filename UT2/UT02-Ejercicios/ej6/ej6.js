@@ -11,6 +11,7 @@ true + false // 1
 "  -9  " - 5 // -14
 null + 1 // 1
 undefined + 1 // NaN
+" \t \n" - 2 // -2
 
 /*
 
@@ -74,6 +75,10 @@ undefined + 1 // NaN
     13. undefined + 1 -> NaN
         La conversión numérica de undefined produce NaN, no 0.
         Al sumar 1 a NaN, el resultado sigue siendo NaN.
+
+    14. " \t \n" - 2 -> -2
+        La cadena contiene solo espacios, tabulaciones y saltos de línea.
+        La conversión numérica de esta cadena da -2.
 
 ********************************************************************
 
