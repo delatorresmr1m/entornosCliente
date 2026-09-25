@@ -8,10 +8,14 @@ positivo, la función no tiene que comprobarlo.
 
 **********************************************/
 
-let edad = 18;
+let edad1 = 18;
+let edad2 = 13;
+let edad3 = 91;
 
-function edad1(edad) {
+function edadTrueOrFalse(edad) {
     return edad >= 14 && edad <= 90;
 }
 
-console.log(edad1(edad)); // Muestra true, porque 18 está entre 14 y 90.
+console.log(edad1 + ": " + edadTrueOrFalse(edad1)); // Muestra true, porque 18 está entre 14 y 90.
+console.log(edad2 + ": " + edadTrueOrFalse(edad2) );
+console.log(edad3 + ": " + edadTrueOrFalse(edad3) );
