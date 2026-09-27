@@ -22,28 +22,37 @@ la sentencia prompt().
 
 function pedirNumeroMayor100(){
 
-    let numero = prompt("Introduce un número mayor que 100: ", null);
+    let numero;
 
-    if(numero != "null" || numero != ""){
+    // do...while pide el número al menos una vez.
+    do{
 
-        numero=Number(numero);
+        numero = prompt("Introduce un número mayor que 100: ", "");
 
-        while(numero < 100 && numero !== "null"){
-
-            let numero = prompt("Debes introducir un número mayor que 100: ", null);
-
-            if(numero != "null" || numero != ""){
-
-                numero=Number(numero);
-
-            }
-
+        // Comprobamos la cancelación antes de convertir el texto a número.
+        // null es el valor que devuelve prompt al cancelar, no el texto "null".
+        if(numero === null || numero === ""){
+            return null;
         }
 
-    }
+        numero = Number(numero);
 
-    alert(`El número introducido es: ${numero}`);
+    }while(numero <= 100);
+
+    return numero;
 
 }
 
-pedirNumeroMayor100();
+// Prueba 100 y después 101: debe volver a pedir el número y devolver 101.
+// Al recargar, prueba a cancelar o aceptar sin escribir: debe devolver null.
+let numeroIntroducido = pedirNumeroMayor100();
+
+console.log(numeroIntroducido);
+
+if(numeroIntroducido === null){
+    alert("Cancelado.");
+}
+else{
+    alert(`El número introducido es: ${numeroIntroducido}`);
+
+}
