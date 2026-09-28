@@ -16,7 +16,7 @@ triángulo como este (para lineas = 7):
 Si el valor es incorrecto (sólo se admiten enteros mayores
 que 0), no mostrará nada por consola.
 
- ************************************************************/
+*************************************************************/
 
 "use strict";
 
