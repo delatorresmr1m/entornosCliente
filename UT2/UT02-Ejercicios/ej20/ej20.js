@@ -18,11 +18,12 @@ function primos(n){
 
         let esPrimo=true;
 
-        for(let j=2; j<i; j++){
+        for(let j=2; j<i && esPrimo; j++){
 
             if(i % j == 0){
+
                 esPrimo=false;
-                break;
+                
             }
 
         }
